@@ -1,6 +1,30 @@
 # Explaining some of dark souls' AI functions
 
-First of all, check this community made explination on many of the functions used (made by modders):\n
+First of all, how to read the AI in general: 
+
+- The Goal.Intiliaze function is executed when the AI is created.
+- The Goal.Activate function is executed when the AI has no sub-goals, or in other words, when the AI has nothing to do (usually after after finishing an attack, or after making some distance). 
+Sub-goals can be "do attack x", "turn left", "back off until 2 meters from target" etc.
+- The Goal.Interrupt function is used as the "reaction" function. In here there will be all the input reads, such as dodging when the target creates a bullet (i.e using a spell or shooting a bow), when they should parry, etc.
+
+
+The Activate function is usually the most relevant one, there the most prominent thing is the "probabilities" array. 
+Reading it is simple enough, the index is the act number and the value stored is the weight for doing said act.
+For example:
+```
+probabilities[1] = 10
+probabilities[2] = 120
+probabilities[5] = 30
+```
+This means that Act01 has weight of 10, Act02 weight of 120, Act05 weight of 30. At the end of the function one act will be chosen at random according to these weights.
+
+Second of all, check this community made explination on many of the helper functions and sub-goals used (made by modders), if you see a function whose name doesn't clarify its purpose, go here and CTRL + F:
+
 https://docs.google.com/spreadsheets/d/1_tvSopHY_A_s70a_VO9xzX78fN7ig1oKJihuDjWDB-g/edit#gid=1578583932
 
-This doesn't have everything, so I will list the rest here
+
+Other helpful things to know:
+- TARGET_ENE_0 is the entity's target, usually you! But possibly a summon or a different entity.
+- GetMapHitRadius(entity) gets the entity's hitbox radius as defined in NPCParam.
+- In every act function you'll see a number returned (often referred to as GetWellSpace_Odds), this is (in percentages) how likely the entity is to execute their AfterAttackAct after executing the act. 
+Meaning if this is 100 for an act you'll probably see the entity idle/wander around (as that is usually what's in the AfterAttackAct) after executing said act.
