@@ -28,6 +28,7 @@ Meaning if this is 100 for some act you'll probably see the entity idle/wander a
 https://docs.google.com/spreadsheets/d/1_tvSopHY_A_s70a_VO9xzX78fN7ig1oKJihuDjWDB-g/edit#gid=1578583932
 
 
+Even though I try to shortly describe what every act does, sometimes fully explaining is cumbersome so just look at the code and use the animation id for visual reference.
 Other helpful things to know:
 - TARGET_ENE_0 is the entity's target, usually you! But possibly a summon or a different entity.
 - GetMapHitRadius(entity) gets the entity's hitbox radius as defined in NPCParam.
