@@ -41,4 +41,8 @@ Non-attacks animation ids:
 - 6002 = Dodge left
 - 6003 = Dodge right
 
+
+I tried not to change the logic at all, just in case there's something I don't know. So you may see an impossible if statement or a useless function call here and there.
+
+
 I want to make it clear most of the heavy lifting was by DSLuaDecompiler, from [this](https://github.com/nex3/DSLuaDecompiler) fork.
