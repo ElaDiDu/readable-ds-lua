@@ -36,9 +36,9 @@ Other helpful things to know:
 
 
 Non-attacks animation ids:
--6000 = Dodge forwards
--6001 = Dodge backwards
--6002 = Dodge left
--6003 = Dodge right
+- 6000 = Dodge forwards
+- 6001 = Dodge backwards
+- 6002 = Dodge left
+- 6003 = Dodge right
 
 I want to make it clear most of the heavy lifting was by DSLuaDecompiler, from [this](https://github.com/nex3/DSLuaDecompiler) fork.
