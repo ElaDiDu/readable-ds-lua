@@ -24,7 +24,7 @@ Goal.Activate = function (_, actor, goals)
     --Number(2) is basically a value stored in cinder, it goes up every time cinder attacks- by a different amount for each attack
     --you can mentally replace Number(2) with "how much has cinder attacked/how much will he want to phase change"
 
-    local phase_change_chance
+    local phase_change_chance --if this value is at least 100, cinder will phase change
     if actor:GetNumber(2) >= 150 then
         phase_change_chance = actor:GetRandam_Int(100, 120)
     elseif actor:GetNumber(2) >= 100 then
