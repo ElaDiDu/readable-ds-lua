@@ -9,7 +9,7 @@ Sub-goals can be "do attack x", "turn left", "back off until 2 meters from targe
 
 
 The Activate function is usually the most relevant one, there the most prominent thing is the "probabilities" array. 
-Reading it is simple enough, the index is the act number and the value stored is the weight for doing said act.
+Reading it is simple enough, the index is the act number and the value is the weight for doing said act.
 For example:
 ```
 probabilities[1] = 10
