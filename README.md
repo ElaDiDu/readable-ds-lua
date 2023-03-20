@@ -35,4 +35,10 @@ Other helpful things to know:
 - InsideDir(actor, goals, startDegree, degreeRange), basically just IsInsideTarget except the degrees can wrap around and it assumes target = TARGET_ENE_0?
 
 
+Non-attacks animation ids:
+-6000 = Dodge forwards
+-6001 = Dodge backwards
+-6002 = Dodge left
+-6003 = Dodge right
+
 I want to make it clear most of the heavy lifting was by DSLuaDecompiler, from [this](https://github.com/nex3/DSLuaDecompiler) fork.
