@@ -25,7 +25,7 @@ Meaning if this is 100 for some act you'll probably see the entity idle/wander a
 
 
 ## Check this community made explanation on many of the helper functions and sub-goals used in the AIs (made by modding community), if you see a function whose name doesn't clarify its purpose, go here and CTRL + F:
-https://docs.google.com/spreadsheets/d/1_tvSopHY_A_s70a_VO9xzX78fN7ig1oKJihuDjWDB-g/edit#gid=1578583932
+https://docs.google.com/spreadsheets/d/1_tvSopHY_A_s70a_VO9xzX78fN7ig1oKJihuDjWDB-g
 
 
 Even though I try to shortly describe what every act does, sometimes fully explaining is cumbersome so just look at the code and use the animation files I provided for visual reference.
