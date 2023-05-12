@@ -8,7 +8,8 @@ Sub-goals can be "do attack x", "turn left", "back off until 2 meters from targe
 - The Goal.Interrupt function is used as the "reaction" function. Input reads and dynamic follow ups ("in the moment" follow up decisions). E.g dodging when the target creates a bullet (i.e using a spell or shooting a bow), when they should attempt a parry, etc.
 
 
-The Activate function is usually the most relevant one, there the most prominent thing is the "probabilities" array. 
+The Activate and Interrupt functions are usually the most relevant ones
+In Activate the most prominent thing is the "probabilities" array. 
 Reading it is simple enough, the index is the act number and the value is the weight for doing said act.
 For example:
 ```
