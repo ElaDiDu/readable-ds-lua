@@ -5,7 +5,7 @@
 - The Goal.Intiliaze function is executed when the AI is created.
 - The Goal.Activate function is executed when the AI has no sub-goals, or in other words, when the AI has nothing to do (usually after after finishing an attack, or after making some distance). 
 Sub-goals can be "do attack x", "turn left", "back off until 2 meters from target" etc.
-- The Goal.Interrupt function is used as the "reaction" function. In here there will be all things related to dynamic follow ups, input reads- such as dodging when the target creates a bullet (i.e using a spell or shooting a bow), when they should attempt a parry, etc.
+- The Goal.Interrupt function is used as the "reaction" function. Input reads and dynamic follow ups ("in the moment" follow up decisions). E.g dodging when the target creates a bullet (i.e using a spell or shooting a bow), when they should attempt a parry, etc.
 
 
 The Activate function is usually the most relevant one, there the most prominent thing is the "probabilities" array. 
