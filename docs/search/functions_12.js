@@ -14,7 +14,7 @@ var searchData=
   ['teamhelp_5fvalidatecall_11',['TeamHelp_ValidateCall',['../d1/d81/class_ai_func.html#a60ccac75860151cb503d47ab07acf66b',1,'AiFunc']]],
   ['teamhelp_5fvalidatereply_12',['TeamHelp_ValidateReply',['../d1/d81/class_ai_func.html#acd1eeef980b3d8295ad83b1b01a6c4eb',1,'AiFunc']]],
   ['teamreplyhelp_13',['TeamReplyHelp',['../dd/dac/_goals_8hpp.html#a47fd95acb1ee92b19c58f2d8a5809f26',1,'Goals.hpp']]],
-  ['terminate_14',['Terminate',['../d1/dcf/class_goal.html#a5316df945273a8401ae93cf6465e260b',1,'Goal']]],
+  ['terminate_14',['Terminate',['../df/d02/class_goal_native.html#a535d85a50eb74af0acce920bcd62b750',1,'GoalNative']]],
   ['timingsetnumber_15',['TimingSetNumber',['../d4/d58/class_goal_func.html#a17da5d6e67e7ff9cd18a8a9eb2f78527',1,'GoalFunc']]],
   ['timingsettimer_16',['TimingSetTimer',['../d4/d58/class_goal_func.html#a9ae73cc6c5a1a9e6a1ad95dff548971f',1,'GoalFunc']]],
   ['topgoal_17',['TopGoal',['../dd/dac/_goals_8hpp.html#a7913dac5a636810e79ee08636bfb17ca',1,'Goals.hpp']]],

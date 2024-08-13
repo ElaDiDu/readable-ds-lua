@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['activate_0',['Activate',['../d1/dcf/class_goal.html#a9fb0f50ea075ba893b55d3123349b284',1,'Goal']]],
+  ['activate_0',['Activate',['../df/d02/class_goal_native.html#af6791c9e50b4a8f2d17cfae682386acf',1,'GoalNative']]],
   ['activatenosubgoal_1',['ActivateNoSubGoal',['../dd/dac/_goals_8hpp.html#a5cca2337cd9e0a7259650013cf815a81',1,'Goals.hpp']]],
   ['addfriendattackedtarget_2',['AddFriendAttackedTarget',['../d1/d81/class_ai_func.html#a0da0da6097052556fd829a156db9b794',1,'AiFunc']]],
   ['addgoalscopedteamrecord_3',['AddGoalScopedTeamRecord',['../d4/d58/class_goal_func.html#a039e86111d302fe0db9a12f6b569e0d8',1,'GoalFunc']]],
