@@ -124,17 +124,20 @@ Functions</h2></td></tr>
 <tr class="memdesc:afd641607aa73c98b53b8b49b65f6fc23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls function OnIf_&lt;BATTLEGOALID&gt; with args (ai, goal, codeNo)  <br /></td></tr>
 <tr class="separator:afd641607aa73c98b53b8b49b65f6fc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac29faa5e9e16f862f9aa93193b91b13b" id="r_ac29faa5e9e16f862f9aa93193b91b13b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac29faa5e9e16f862f9aa93193b91b13b">WaitCancelTiming</a> ()</td></tr>
-<tr class="memdesc:ac29faa5e9e16f862f9aa93193b91b13b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do nothing besides turning to TARGET_ENE_0 until life end or other unknown conditions are satisified.  <br /></td></tr>
+<tr class="memdesc:ac29faa5e9e16f862f9aa93193b91b13b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do nothing besides turning to TARGET_ENE_0 until life end or one of the animation cancels is satisfied (<a class="el" href="../../d1/d81/class_ai_func.html#a24f99723b4328d8ea8d5a698b1a7e72a" title="Returns true if the character has EnableComboAttack enabled, enabled through TAE 0 &quot;ChrActionFlag&quot;/&quot;J...">AiFunc::IsEnableComboAttack</a>, <a class="el" href="../../d1/d81/class_ai_func.html#a9734ea4736259b8980fafdea28c319e8" title="Returns true if the character has EnableCancelMove enabled, enabled through TAE 0 &quot;ChrActionFlag&quot;/&quot;Ju...">AiFunc::IsEnableCancelMove</a>, <a class="el" href="../../d1/d81/class_ai_func.html#ae676a0b2fab1f9c14eee4acfb535bf8b" title="Returns true if the character has EnableCancelStep enabled, enabled through TAE 0 &quot;ChrActionFlag&quot;/&quot;Ju...">AiFunc::IsEnableCancelStep</a>, <a class="el" href="../../d1/d81/class_ai_func.html#a56d1c998898fd3c5f79d3b72aafb5965" title="Returns true if the character has EnableCancelAttack enabled, enabled through TAE 0 &quot;ChrActionFlag&quot;/&quot;...">AiFunc::IsEnableCancelAttack</a>).  <br /></td></tr>
 <tr class="separator:ac29faa5e9e16f862f9aa93193b91b13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314ad5316c1e4f2b45a881a11f60f0bb" id="r_a314ad5316c1e4f2b45a881a11f60f0bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a314ad5316c1e4f2b45a881a11f60f0bb">Wait</a> (<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> turnTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>)</td></tr>
+<tr class="memdesc:a314ad5316c1e4f2b45a881a11f60f0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do nothing besides turning until life end.  <br /></td></tr>
+<tr class="separator:a314ad5316c1e4f2b45a881a11f60f0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3eb8126a36872d1cb0b564c6d646001" id="r_ae3eb8126a36872d1cb0b564c6d646001"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3eb8126a36872d1cb0b564c6d646001">Turn</a> (<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> turnTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, float stopAngleWidth=15, int guardStateId=0, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#a1d5ef9da5338734896313937b3c0672c">GOAL_RESULT</a> onGuardResult=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#a1d5ef9da5338734896313937b3c0672ca2ac3101d145fd14abbbe0f003450fc0f">GOAL_RESULT_Continue</a>, bool guardSuccessOnEnd_Unused=true)</td></tr>
 <tr class="memdesc:ae3eb8126a36872d1cb0b564c6d646001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn to target until target is within the specified angle.  <br /></td></tr>
 <tr class="separator:ae3eb8126a36872d1cb0b564c6d646001"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa88f0bf3e36d62512d5ba6c1af24dd8" id="r_aaa88f0bf3e36d62512d5ba6c1af24dd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa88f0bf3e36d62512d5ba6c1af24dd8">TurnAround</a> (<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> moveTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ab3ab52e4ad2cc020e45f1831c93a0bfe">AI_DIR_TYPE</a> directionStart=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ab3ab52e4ad2cc020e45f1831c93a0bfea0f34e098ac252501ba60cf87d6a8161f">AI_DIR_TYPE_CENTER</a>, float stopAngleWidth=0, bool walk=false, bool successOnEnd=false, int guardStateId=0)</td></tr>
 <tr class="memdesc:aaa88f0bf3e36d62512d5ba6c1af24dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move around target, keeping yourself within the circle sector defined by the target as the center, starting angle with the direction type from directionDesire, and angle width from stopAngleWidth.  <br /></td></tr>
 <tr class="separator:aaa88f0bf3e36d62512d5ba6c1af24dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60b9930d0feb02028e47617cac411e08" id="r_a60b9930d0feb02028e47617cac411e08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60b9930d0feb02028e47617cac411e08">WaitWithAnime</a> (int animationId=0, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> turnTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>)</td></tr>
-<tr class="memdesc:a60b9930d0feb02028e47617cac411e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes an animation, no actual waiting (equivalent to <a class="el" href="#ad2068eedc92eb4bd915cf2357e0d9274" title="Turn towards the target and execute the animation. Used as a standalone attack. Specifics in CommonAt...">AttackNonCancel</a>(animationId, turnTarget, 9999, 0, -1)).  <br /></td></tr>
-<tr class="separator:a60b9930d0feb02028e47617cac411e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9ab4d2fe438003044412a3e0ba902a2" id="r_aa9ab4d2fe438003044412a3e0ba902a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9ab4d2fe438003044412a3e0ba902a2">WaitWithAnime</a> (int animationId=0, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> target=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>)</td></tr>
+<tr class="memdesc:aa9ab4d2fe438003044412a3e0ba902a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes an animation, no actual waiting (equivalent to <a class="el" href="#ad2068eedc92eb4bd915cf2357e0d9274" title="Turn towards the target and execute the animation. Used as a standalone attack. Specifics in CommonAt...">AttackNonCancel</a>(animationId, turnTarget, 9999, 0, -1)).  <br /></td></tr>
+<tr class="separator:aa9ab4d2fe438003044412a3e0ba902a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2824d5d24181b1ed46bb78adf7841b66" id="r_a2824d5d24181b1ed46bb78adf7841b66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2824d5d24181b1ed46bb78adf7841b66">MoveToSomewhereSmoothFly</a> ()</td></tr>
 <tr class="memdesc:a2824d5d24181b1ed46bb78adf7841b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undefined.  <br /></td></tr>
 <tr class="separator:a2824d5d24181b1ed46bb78adf7841b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,12 +171,12 @@ Functions</h2></td></tr>
 <tr class="memitem:af5299efb79c404255514f4503e5d411c" id="r_af5299efb79c404255514f4503e5d411c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5299efb79c404255514f4503e5d411c">MoveToSomewhere</a> (<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> moveTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ab3ab52e4ad2cc020e45f1831c93a0bfe">AI_DIR_TYPE</a> directionFromTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ab3ab52e4ad2cc020e45f1831c93a0bfea0f34e098ac252501ba60cf87d6a8161f">AI_DIR_TYPE_CENTER</a>, float stopDist=0, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> turnTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, bool walk=false, float directionalDistance=0, float unused_7, bool xzDistanceOnly=false, bool useDefaultArgs=false, bool closeProximityMode=false)</td></tr>
 <tr class="memdesc:af5299efb79c404255514f4503e5d411c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use pathing to move towards a spherical sector defined by the parameters.  <br /></td></tr>
 <tr class="separator:af5299efb79c404255514f4503e5d411c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab14a915500a7d1c9266522e1f785da0b" id="r_ab14a915500a7d1c9266522e1f785da0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab14a915500a7d1c9266522e1f785da0b">SpinStep</a> (int animationId=0, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> turnTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, float turnTime=0, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ab3ab52e4ad2cc020e45f1831c93a0bfe">AI_DIR_TYPE</a> dirSpaceCheck=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ab3ab52e4ad2cc020e45f1831c93a0bfea0f34e098ac252501ba60cf87d6a8161f">AI_DIR_TYPE_CENTER</a>, float distSpaceCheck=0)</td></tr>
-<tr class="memdesc:ab14a915500a7d1c9266522e1f785da0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns to the target and then tests if there's space for the character to step/hop in the position they expect, and if so, executes the animation.  <br /></td></tr>
-<tr class="separator:ab14a915500a7d1c9266522e1f785da0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b4db19e94836ef91b09f6f4e0c9bf47" id="r_a9b4db19e94836ef91b09f6f4e0c9bf47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b4db19e94836ef91b09f6f4e0c9bf47">Fall</a> (<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> stopTarget, int animationIdFall, int animationIdStop, float stopDistY)</td></tr>
-<tr class="memdesc:a9b4db19e94836ef91b09f6f4e0c9bf47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unused goal, perhaps for when an enemy can choose to "fall" in a specific manner (such as a bird)  <br /></td></tr>
-<tr class="separator:a9b4db19e94836ef91b09f6f4e0c9bf47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e035c73086afdf6c46956f4bd3704fa" id="r_a3e035c73086afdf6c46956f4bd3704fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e035c73086afdf6c46956f4bd3704fa">SpinStep</a> (int animationId=0, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> target=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, float turnTime=0, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ab3ab52e4ad2cc020e45f1831c93a0bfe">AI_DIR_TYPE</a> dirSpaceCheck=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ab3ab52e4ad2cc020e45f1831c93a0bfea0f34e098ac252501ba60cf87d6a8161f">AI_DIR_TYPE_CENTER</a>, float distSpaceCheck=0)</td></tr>
+<tr class="memdesc:a3e035c73086afdf6c46956f4bd3704fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns to the target and then tests if there's space for the character to step/hop in the position they expect, and if so, executes the animation.  <br /></td></tr>
+<tr class="separator:a3e035c73086afdf6c46956f4bd3704fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9288523df9e5e5f486768f2bffd551a3" id="r_a9288523df9e5e5f486768f2bffd551a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9288523df9e5e5f486768f2bffd551a3">Fall</a> (<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> stopTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, int ezStateIdFall=0, int ezStateIdStop=0, float stopDistY=0)</td></tr>
+<tr class="memdesc:a9288523df9e5e5f486768f2bffd551a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unused goal, perhaps for when an enemy can choose to "fall" in a specific manner (such as a bird)  <br /></td></tr>
+<tr class="separator:a9288523df9e5e5f486768f2bffd551a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f5ca818e4da6455240e09814ef7b52d" id="r_a2f5ca818e4da6455240e09814ef7b52d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f5ca818e4da6455240e09814ef7b52d">MoveToMovePointAir</a> (<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> moveTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, float unused_2, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ab3ab52e4ad2cc020e45f1831c93a0bfe">AI_DIR_TYPE</a> directionFromTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ab3ab52e4ad2cc020e45f1831c93a0bfea0f34e098ac252501ba60cf87d6a8161f">AI_DIR_TYPE_CENTER</a>)</td></tr>
 <tr class="memdesc:a2f5ca818e4da6455240e09814ef7b52d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets fixed position move target via <a class="el" href="../../d1/d81/class_ai_func.html#add5eeea068a5fb5eeb758375694e26e0" title="Sets the AI&#39;s fixed target pos (POINT_AI_FIXED_POS) to the given position, as defined by the end poin...">AiFunc::SetAIFixedMoveTarget</a>.  <br /></td></tr>
 <tr class="separator:a2f5ca818e4da6455240e09814ef7b52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,9 +314,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aac436fb41bc82e33ac9759cd20bb5da2" id="r_aac436fb41bc82e33ac9759cd20bb5da2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac436fb41bc82e33ac9759cd20bb5da2">ContinueAttack</a> (int animationId=0, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> target=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, float constantSuccessDist=0, bool successOnHit=false)</td></tr>
 <tr class="memdesc:aac436fb41bc82e33ac9759cd20bb5da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add goal scoped team record to attack target. Repeatedly turn to the target and execute the animation until goal life ends.  <br /></td></tr>
 <tr class="separator:aac436fb41bc82e33ac9759cd20bb5da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8425e43fad8a45658baaac339b563727" id="r_a8425e43fad8a45658baaac339b563727"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8425e43fad8a45658baaac339b563727">ApproachStep</a> (int animationId=0, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> moveTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, float stopDist=0)</td></tr>
-<tr class="memdesc:a8425e43fad8a45658baaac339b563727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approach target using steps, <a class="el" href="#ab14a915500a7d1c9266522e1f785da0b" title="Turns to the target and then tests if there&#39;s space for the character to step/hop in the position the...">SpinStep</a>.  <br /></td></tr>
-<tr class="separator:a8425e43fad8a45658baaac339b563727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52961a17ca25420056f0983d710d81c8" id="r_a52961a17ca25420056f0983d710d81c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52961a17ca25420056f0983d710d81c8">ApproachStep</a> (int animationId=0, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> target=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, float stopDist=0)</td></tr>
+<tr class="memdesc:a52961a17ca25420056f0983d710d81c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approach target using steps, <a class="el" href="#a3e035c73086afdf6c46956f4bd3704fa" title="Turns to the target and then tests if there&#39;s space for the character to step/hop in the position the...">SpinStep</a>.  <br /></td></tr>
+<tr class="separator:a52961a17ca25420056f0983d710d81c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7fb1dba20d58a34884ef50410314dd5" id="r_ab7fb1dba20d58a34884ef50410314dd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7fb1dba20d58a34884ef50410314dd5">UseItem</a> (int itemIndex=0)</td></tr>
 <tr class="memdesc:ab7fb1dba20d58a34884ef50410314dd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use item in the given slot in items shortcut section.  <br /></td></tr>
 <tr class="separator:ab7fb1dba20d58a34884ef50410314dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -410,9 +413,9 @@ Functions</h2></td></tr>
 <tr class="memitem:adf708a516f0215ca618cc492ad8cd82d" id="r_adf708a516f0215ca618cc492ad8cd82d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf708a516f0215ca618cc492ad8cd82d">WeaponChange</a> (int index=0)</td></tr>
 <tr class="memdesc:adf708a516f0215ca618cc492ad8cd82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Doesn't work. Use NPC_ATK_ArrowKeyRight and NPC_ATK_ArrowKeyLeft instead.  <br /></td></tr>
 <tr class="separator:adf708a516f0215ca618cc492ad8cd82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accf9f6128e80fca9442f5a21aae941cf" id="r_accf9f6128e80fca9442f5a21aae941cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accf9f6128e80fca9442f5a21aae941cf">StepSafety</a> (int frontPriority=0, int backPriority=0, int leftPriority=0, int rightPriority=0, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> turnTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, float distSpaceCheck=0, float turnTime=0, bool alwaysSuccess=false)</td></tr>
-<tr class="memdesc:accf9f6128e80fca9442f5a21aae941cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decide which direction to step/hop to using space checks, the highest priority valid direction is cohsen. Negative priority makes the direction invalid. Uses <a class="el" href="#ab14a915500a7d1c9266522e1f785da0b" title="Turns to the target and then tests if there&#39;s space for the character to step/hop in the position the...">SpinStep</a>.  <br /></td></tr>
-<tr class="separator:accf9f6128e80fca9442f5a21aae941cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a339d26873ca6f35117e28e3d99a6e20d" id="r_a339d26873ca6f35117e28e3d99a6e20d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a339d26873ca6f35117e28e3d99a6e20d">StepSafety</a> (int frontPriority=0, int backPriority=0, int leftPriority=0, int rightPriority=0, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> target=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, float distSpaceCheck=0, float turnTime=0, bool alwaysSuccess=false)</td></tr>
+<tr class="memdesc:a339d26873ca6f35117e28e3d99a6e20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decide which direction to step/hop to using space checks, the highest priority valid direction is cohsen. Negative priority makes the direction invalid. Uses <a class="el" href="#a3e035c73086afdf6c46956f4bd3704fa" title="Turns to the target and then tests if there&#39;s space for the character to step/hop in the position the...">SpinStep</a>.  <br /></td></tr>
+<tr class="separator:a339d26873ca6f35117e28e3d99a6e20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8ba92f7a6aabfe1579aca85c9e50f6d" id="r_ae8ba92f7a6aabfe1579aca85c9e50f6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8ba92f7a6aabfe1579aca85c9e50f6d">Wait_On_FailedPath</a> (float pathCheckInterval=0)</td></tr>
 <tr class="memdesc:ae8ba92f7a6aabfe1579aca85c9e50f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for a path and if one isn't found then wait and repeat.  <br /></td></tr>
 <tr class="separator:ae8ba92f7a6aabfe1579aca85c9e50f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -473,6 +476,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aeb884ecfa14533abfed61dbb14cabe72" id="r_aeb884ecfa14533abfed61dbb14cabe72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb884ecfa14533abfed61dbb14cabe72">LeaveTargetContinuous</a> (<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> moveTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, float stopDist=0, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> turnTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, bool walk=false, int guardStateId=0, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#aee204dc0d1bcbcb963a0ee8d75ff32c8">GUARD_GOAL_DESIRE_RET</a> onGuardResult=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#aee204dc0d1bcbcb963a0ee8d75ff32c8af20b78f34d1f25738da1718b023c8d61">GUARD_GOAL_DESIRE_RET_Continue</a>, bool guardSuccessOnEnd=true, float distSpaceCheck=0)</td></tr>
 <tr class="memdesc:aeb884ecfa14533abfed61dbb14cabe72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Leave the target until you reach the given distance or don't have space in front or behind of self.  <br /></td></tr>
 <tr class="separator:aeb884ecfa14533abfed61dbb14cabe72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47200460c5c5f01fe9f1986b6e60963a" id="r_a47200460c5c5f01fe9f1986b6e60963a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47200460c5c5f01fe9f1986b6e60963a">LeaveTarget_Escape</a> (<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> moveTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, float stopDist=0, <a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a> turnTarget=<a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a>, bool walk=false, float stopDistPathPoint=0)</td></tr>
+<tr class="memdesc:a47200460c5c5f01fe9f1986b6e60963a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn around and attempt to escape the target, constantly walking away using pathing to not get stuck. If turnTarget isn't self/none it will take priority over turning to pathing point, however this leads to odd behavior around walls.  <br /></td></tr>
+<tr class="separator:a47200460c5c5f01fe9f1986b6e60963a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a6e662597adb1e0bf8a9f3b5f2d7c28" id="r_a2a6e662597adb1e0bf8a9f3b5f2d7c28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a6e662597adb1e0bf8a9f3b5f2d7c28">ErrorNotification</a> (int errorCode=0)</td></tr>
 <tr class="memdesc:a2a6e662597adb1e0bf8a9f3b5f2d7c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing. Meant to print to console.  <br /></td></tr>
 <tr class="separator:a2a6e662597adb1e0bf8a9f3b5f2d7c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -786,8 +792,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8425e43fad8a45658baaac339b563727" name="a8425e43fad8a45658baaac339b563727"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8425e43fad8a45658baaac339b563727">&#9670;&#160;</a></span>ApproachStep()</h2>
+<a id="a52961a17ca25420056f0983d710d81c8" name="a52961a17ca25420056f0983d710d81c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52961a17ca25420056f0983d710d81c8">&#9670;&#160;</a></span>ApproachStep()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -800,7 +806,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a></td>          <td class="paramname"><span class="paramname"><em>moveTarget</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a></td>          <td class="paramname"><span class="paramname"><em>target</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -810,11 +816,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Approach target using steps, <a class="el" href="#ab14a915500a7d1c9266522e1f785da0b" title="Turns to the target and then tests if there&#39;s space for the character to step/hop in the position the...">SpinStep</a>. </p>
+<p>Approach target using steps, <a class="el" href="#a3e035c73086afdf6c46956f4bd3704fa" title="Turns to the target and then tests if there&#39;s space for the character to step/hop in the position the...">SpinStep</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">animationId</td><td>animation to execute</td></tr>
-    <tr><td class="paramname">moveTarget</td><td>target to move to</td></tr>
+    <tr><td class="paramname">target</td><td>target to move to and attack</td></tr>
     <tr><td class="paramname">stopDist</td><td>success when reached this distance from moveTarget</td></tr>
   </table>
   </dd>
@@ -2336,8 +2342,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9b4db19e94836ef91b09f6f4e0c9bf47" name="a9b4db19e94836ef91b09f6f4e0c9bf47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b4db19e94836ef91b09f6f4e0c9bf47">&#9670;&#160;</a></span>Fall()</h2>
+<a id="a9288523df9e5e5f486768f2bffd551a3" name="a9288523df9e5e5f486768f2bffd551a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9288523df9e5e5f486768f2bffd551a3">&#9670;&#160;</a></span>Fall()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2345,22 +2351,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void Fall </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a></td>          <td class="paramname"><span class="paramname"><em>stopTarget</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a></td>          <td class="paramname"><span class="paramname"><em>stopTarget</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>animationIdFall</em></span>, </td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ezStateIdFall</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>animationIdStop</em></span>, </td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ezStateIdStop</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>stopDistY</em></span>&#160;)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>stopDistY</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2370,8 +2376,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">stopTarget</td><td>target to comapre distance to</td></tr>
-    <tr><td class="paramname">animationIdFall</td><td>falling animation</td></tr>
-    <tr><td class="paramname">animationIdStop</td><td>stop falling animation</td></tr>
+    <tr><td class="paramname">ezStateIdFall</td><td>falling animation</td></tr>
+    <tr><td class="paramname">ezStateIdStop</td><td>stop falling animation</td></tr>
     <tr><td class="paramname">stopDistY</td><td>stops when at this distance from stopTarget</td></tr>
   </table>
   </dd>
@@ -3162,6 +3168,54 @@ Functions</h2></td></tr>
     <tr><td class="paramname">guardStateId</td><td>guard EZStateId</td></tr>
     <tr><td class="paramname">onGuardResult</td><td>goal state on successfully guarding an attack</td></tr>
     <tr><td class="paramname">guardSuccessOnEnd</td><td>does the guard goal succeed on life end</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a47200460c5c5f01fe9f1986b6e60963a" name="a47200460c5c5f01fe9f1986b6e60963a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47200460c5c5f01fe9f1986b6e60963a">&#9670;&#160;</a></span>LeaveTarget_Escape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LeaveTarget_Escape </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a></td>          <td class="paramname"><span class="paramname"><em>moveTarget</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>stopDist</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a></td>          <td class="paramname"><span class="paramname"><em>turnTarget</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>walk</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>stopDistPathPoint</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Turn around and attempt to escape the target, constantly walking away using pathing to not get stuck. If turnTarget isn't self/none it will take priority over turning to pathing point, however this leads to odd behavior around walls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">moveTarget</td><td>target to move from</td></tr>
+    <tr><td class="paramname">stopDist</td><td>success when reached this distance from moveTarget</td></tr>
+    <tr><td class="paramname">turnTarget</td><td>target to turn to</td></tr>
+    <tr><td class="paramname">walk</td><td>is walk or run</td></tr>
+    <tr><td class="paramname">stopDistPathPoint</td><td>find new pathing point when this distance away from current one</td></tr>
   </table>
   </dd>
 </dl>
@@ -5138,17 +5192,17 @@ Functions</h2></td></tr>
 <p>specialTurn.lua</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stopAngleWidth</td><td>angle for target to be within for the goal to succeed</td></tr>
     <tr><td class="paramname">animationId</td><td>animation to execute</td></tr>
     <tr><td class="paramname">target</td><td>target to turn to and attack</td></tr>
+    <tr><td class="paramname">stopAngleWidth</td><td>angle for target to be within for the goal to succeed</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ab14a915500a7d1c9266522e1f785da0b" name="ab14a915500a7d1c9266522e1f785da0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab14a915500a7d1c9266522e1f785da0b">&#9670;&#160;</a></span>SpinStep()</h2>
+<a id="a3e035c73086afdf6c46956f4bd3704fa" name="a3e035c73086afdf6c46956f4bd3704fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e035c73086afdf6c46956f4bd3704fa">&#9670;&#160;</a></span>SpinStep()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5161,7 +5215,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a></td>          <td class="paramname"><span class="paramname"><em>turnTarget</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a></td>          <td class="paramname"><span class="paramname"><em>target</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -5182,11 +5236,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Turns to the target and then tests if there's space for the character to step/hop in the position they expect, and if so, executes the animation. </p>
-<p>Cancels current animations according to <a class="el" href="../../d1/d81/class_ai_func.html#ae676a0b2fab1f9c14eee4acfb535bf8b" title="Returns true if the character has EnableCancelStep enabled, enabled through TAE 0 &quot;ChrActionFlag&quot;/&quot;Ju...">AiFunc::IsEnableCancelStep</a>.</p>
+<p>Goal succeeds when one of: <a class="el" href="../../d1/d81/class_ai_func.html#af123a24d02d17cbde84f793a8c5af25a" title="Returns true if attack is over.">AiFunc::IsFinishAttack</a>, <a class="el" href="../../d1/d81/class_ai_func.html#a24f99723b4328d8ea8d5a698b1a7e72a" title="Returns true if the character has EnableComboAttack enabled, enabled through TAE 0 &quot;ChrActionFlag&quot;/&quot;J...">AiFunc::IsEnableComboAttack</a>, <a class="el" href="../../d1/d81/class_ai_func.html#a9734ea4736259b8980fafdea28c319e8" title="Returns true if the character has EnableCancelMove enabled, enabled through TAE 0 &quot;ChrActionFlag&quot;/&quot;Ju...">AiFunc::IsEnableCancelMove</a>, <a class="el" href="../../d1/d81/class_ai_func.html#ae676a0b2fab1f9c14eee4acfb535bf8b" title="Returns true if the character has EnableCancelStep enabled, enabled through TAE 0 &quot;ChrActionFlag&quot;/&quot;Ju...">AiFunc::IsEnableCancelStep</a> is true.</p>
+<p>Step animations (6000-6003) can cancel other animations when <a class="el" href="../../d1/d81/class_ai_func.html#ae676a0b2fab1f9c14eee4acfb535bf8b" title="Returns true if the character has EnableCancelStep enabled, enabled through TAE 0 &quot;ChrActionFlag&quot;/&quot;Ju...">AiFunc::IsEnableCancelStep</a> is true.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">animationId</td><td>animation to execute</td></tr>
-    <tr><td class="paramname">turnTarget</td><td>target to turn to</td></tr>
+    <tr><td class="paramname">target</td><td>target to turn to and attack</td></tr>
     <tr><td class="paramname">turnTime</td><td>maximum turning time</td></tr>
     <tr><td class="paramname">dirSpaceCheck</td><td>direction of where to check for space, normally aligned with step direction</td></tr>
     <tr><td class="paramname">distSpaceCheck</td><td>free space needed in meters</td></tr>
@@ -5226,8 +5281,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="accf9f6128e80fca9442f5a21aae941cf" name="accf9f6128e80fca9442f5a21aae941cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accf9f6128e80fca9442f5a21aae941cf">&#9670;&#160;</a></span>StepSafety()</h2>
+<a id="a339d26873ca6f35117e28e3d99a6e20d" name="a339d26873ca6f35117e28e3d99a6e20d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a339d26873ca6f35117e28e3d99a6e20d">&#9670;&#160;</a></span>StepSafety()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5255,7 +5310,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a></td>          <td class="paramname"><span class="paramname"><em>turnTarget</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a></td>          <td class="paramname"><span class="paramname"><em>target</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -5275,7 +5330,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Decide which direction to step/hop to using space checks, the highest priority valid direction is cohsen. Negative priority makes the direction invalid. Uses <a class="el" href="#ab14a915500a7d1c9266522e1f785da0b" title="Turns to the target and then tests if there&#39;s space for the character to step/hop in the position the...">SpinStep</a>. </p>
+<p>Decide which direction to step/hop to using space checks, the highest priority valid direction is cohsen. Negative priority makes the direction invalid. Uses <a class="el" href="#a3e035c73086afdf6c46956f4bd3704fa" title="Turns to the target and then tests if there&#39;s space for the character to step/hop in the position the...">SpinStep</a>. </p>
 <p>step_safety.lua</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -5283,7 +5338,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">backPriority</td><td>left sideway move priority</td></tr>
     <tr><td class="paramname">leftPriority</td><td>left sideway move priority</td></tr>
     <tr><td class="paramname">rightPriority</td><td>right sideway move priority</td></tr>
-    <tr><td class="paramname">turnTarget</td><td>target to turn to</td></tr>
+    <tr><td class="paramname">target</td><td>target to turn to and attack</td></tr>
     <tr><td class="paramname">distSpaceCheck</td><td>free space in meters needed</td></tr>
     <tr><td class="paramname">turnTime</td><td>maximum turning time</td></tr>
     <tr><td class="paramname">alwaysSuccess</td><td>if true the goal still succeeds without stepping if there are no valid directions</td></tr>
@@ -5638,6 +5693,31 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a314ad5316c1e4f2b45a881a11f60f0bb" name="a314ad5316c1e4f2b45a881a11f60f0bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a314ad5316c1e4f2b45a881a11f60f0bb">&#9670;&#160;</a></span>Wait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Wait </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a></td>          <td class="paramname"><span class="paramname"><em>turnTarget</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do nothing besides turning until life end. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">turnTarget</td><td>target to turn to</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae8ba92f7a6aabfe1579aca85c9e50f6d" name="ae8ba92f7a6aabfe1579aca85c9e50f6d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae8ba92f7a6aabfe1579aca85c9e50f6d">&#9670;&#160;</a></span>Wait_On_FailedPath()</h2>
 
@@ -5679,13 +5759,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Do nothing besides turning to TARGET_ENE_0 until life end or other unknown conditions are satisified. </p>
+<p>Do nothing besides turning to TARGET_ENE_0 until life end or one of the animation cancels is satisfied (<a class="el" href="../../d1/d81/class_ai_func.html#a24f99723b4328d8ea8d5a698b1a7e72a" title="Returns true if the character has EnableComboAttack enabled, enabled through TAE 0 &quot;ChrActionFlag&quot;/&quot;J...">AiFunc::IsEnableComboAttack</a>, <a class="el" href="../../d1/d81/class_ai_func.html#a9734ea4736259b8980fafdea28c319e8" title="Returns true if the character has EnableCancelMove enabled, enabled through TAE 0 &quot;ChrActionFlag&quot;/&quot;Ju...">AiFunc::IsEnableCancelMove</a>, <a class="el" href="../../d1/d81/class_ai_func.html#ae676a0b2fab1f9c14eee4acfb535bf8b" title="Returns true if the character has EnableCancelStep enabled, enabled through TAE 0 &quot;ChrActionFlag&quot;/&quot;Ju...">AiFunc::IsEnableCancelStep</a>, <a class="el" href="../../d1/d81/class_ai_func.html#a56d1c998898fd3c5f79d3b72aafb5965" title="Returns true if the character has EnableCancelAttack enabled, enabled through TAE 0 &quot;ChrActionFlag&quot;/&quot;...">AiFunc::IsEnableCancelAttack</a>). </p>
 <p>Example: When HKS applies a stagger/throw/phase transition animation, this goal will run until the end to prevent the enemy from having unexpected behavior. </p>
 
 </div>
 </div>
-<a id="a60b9930d0feb02028e47617cac411e08" name="a60b9930d0feb02028e47617cac411e08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60b9930d0feb02028e47617cac411e08">&#9670;&#160;</a></span>WaitWithAnime()</h2>
+<a id="aa9ab4d2fe438003044412a3e0ba902a2" name="aa9ab4d2fe438003044412a3e0ba902a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9ab4d2fe438003044412a3e0ba902a2">&#9670;&#160;</a></span>WaitWithAnime()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5698,7 +5778,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a></td>          <td class="paramname"><span class="paramname"><em>turnTarget</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6">TARGET</a></td>          <td class="paramname"><span class="paramname"><em>target</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d4/d1b/_ai_constants_8hpp.html#ac5345ddbc17afc8019971ac5ba6988a6aaef9fc9c14356ec4e677f27f790edf0d">TARGET_ENE_0</a></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5708,7 +5788,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">animationId</td><td>animation to execute</td></tr>
-    <tr><td class="paramname">turnTarget</td><td>target to turn to</td></tr>
+    <tr><td class="paramname">target</td><td>target to turn to and attack</td></tr>
   </table>
   </dd>
 </dl>

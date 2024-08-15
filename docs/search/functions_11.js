@@ -53,7 +53,7 @@ var searchData=
   ['sidewaymoveang_50',['SidewayMoveAng',['../dd/dac/_goals_8hpp.html#a1af754ae2a0220dc6f8a55e097efdb84',1,'Goals.hpp']]],
   ['sidewaymoveavoidchr_51',['SidewayMoveAvoidChr',['../dd/dac/_goals_8hpp.html#a1c4232759585fdb75ad554e93a42ea22',1,'Goals.hpp']]],
   ['specialturn_52',['SpecialTurn',['../dd/dac/_goals_8hpp.html#a1b727feb4401360f3a377b706fb2dae4',1,'Goals.hpp']]],
-  ['spinstep_53',['SpinStep',['../dd/dac/_goals_8hpp.html#ab14a915500a7d1c9266522e1f785da0b',1,'Goals.hpp']]],
+  ['spinstep_53',['SpinStep',['../dd/dac/_goals_8hpp.html#a3e035c73086afdf6c46956f4bd3704fa',1,'Goals.hpp']]],
   ['startattackpassedtimer_54',['StartAttackPassedTimer',['../d1/d81/class_ai_func.html#ac9e6bc79ec8bbff8dc395e65ddd58620',1,'AiFunc']]],
   ['startdash_55',['StartDash',['../d1/d81/class_ai_func.html#a62faaf4aa2314bc85e089070a0868731',1,'AiFunc']]],
   ['startguard_56',['StartGuard',['../d1/d81/class_ai_func.html#ae57eddade339ddbff1a5780581ab314f',1,'AiFunc']]],
@@ -62,5 +62,5 @@ var searchData=
   ['startteamidtimer_59',['StartTeamIdTimer',['../d1/d81/class_ai_func.html#a5756d57b4d71e8e6707758ac9dc81b18',1,'AiFunc']]],
   ['stay_60',['Stay',['../dd/dac/_goals_8hpp.html#a51caeec355d5ee4ff9d5efa663fb0718',1,'Goals.hpp']]],
   ['stepnextmovepoint_61',['StepNextMovePoint',['../d1/d81/class_ai_func.html#a6c273f2498a9883eac26d6f086186c2b',1,'AiFunc']]],
-  ['stepsafety_62',['StepSafety',['../dd/dac/_goals_8hpp.html#accf9f6128e80fca9442f5a21aae941cf',1,'Goals.hpp']]]
+  ['stepsafety_62',['StepSafety',['../dd/dac/_goals_8hpp.html#a339d26873ca6f35117e28e3d99a6e20d',1,'Goals.hpp']]]
 ];
